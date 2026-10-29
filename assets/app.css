@@ -100,6 +100,17 @@ h1 {
     background: #1b4489;
 }
 
+.button-secondary {
+    border-color: #d3dae4;
+    background: #fff;
+    color: #334155;
+}
+
+.button-secondary:hover {
+    border-color: #aab5c5;
+    background: #f8f9fb;
+}
+
 .card {
     overflow: hidden;
     border: 1px solid #e1e6ed;
@@ -206,6 +217,72 @@ tbody tr:hover {
     color: #214f80;
 }
 
+.form-card {
+    padding: 28px;
+}
+
+.student-form {
+    max-width: 760px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-field label {
+    color: #344256;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.optional {
+    color: #788599;
+    font-weight: 400;
+}
+
+.form-field input,
+.form-field select {
+    width: 100%;
+    min-height: 42px;
+    padding: 9px 11px;
+    border: 1px solid #cbd3df;
+    border-radius: 6px;
+    background: #fff;
+    color: #1f2937;
+    font: inherit;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+    border-color: #2457a7;
+    outline: 3px solid rgb(36 87 167 / 15%);
+}
+
+.form-field [aria-invalid="true"] {
+    border-color: #b42332;
+}
+
+.field-error {
+    margin: 0;
+    color: #a21d2b;
+    font-size: 0.85rem;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 28px;
+}
+
 .site-footer {
     padding: 18px 0;
     border-top: 1px solid #e1e6ed;
@@ -230,6 +307,19 @@ tbody tr:hover {
 
     .button {
         width: 100%;
+    }
+
+    .form-card {
+        padding: 20px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .form-actions {
+        flex-direction: column-reverse;
     }
 
     th,
